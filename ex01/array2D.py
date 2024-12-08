@@ -1,4 +1,7 @@
 def slice_me(family: list, start: int, end: int) -> list:
+    """
+Slice images
+    """
     try:
         if not isinstance(family, list) or not all(
                 isinstance(row, list) for row in family):

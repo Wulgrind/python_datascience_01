@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 
 
 def zoom_img(img_array: np.ndarray):
+    """
+Zoom on images
+    """
     crop_size = 400
     height, width, channels = img_array.shape
     center_x, center_y = width // 2 + 130, height // 2 - 90

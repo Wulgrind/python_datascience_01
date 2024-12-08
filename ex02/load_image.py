@@ -3,6 +3,9 @@ import numpy as np
 
 
 def ft_load(path: str) -> np.ndarray:
+    """
+Load images
+    """
     try:
         with Image.open(path) as img:
             img_format = img.format
