@@ -1,11 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from load_image import ft_load
 
-
-def zoom_img(img_array: np.ndarray):
+def zoom_img(path: str):
     """
 Zoom on images
     """
+    img_array = ft_load(path)
     crop_size = 400
     height, width, channels = img_array.shape
     center_x, center_y = width // 2 + 130, height // 2 - 90
@@ -25,3 +26,6 @@ Zoom on images
     plt.ylabel('Y-axis (pixels)')
     plt.title('Zoomed Image')
     plt.show()
+
+if __name__ == '__main__':
+    zoom_img('animal.jpeg')

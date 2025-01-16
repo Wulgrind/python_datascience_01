@@ -1,6 +1,5 @@
 from PIL import Image
 import numpy as np
-from rotate import rotate_img
 
 
 def ft_load(path: str) -> np.ndarray:
@@ -28,12 +27,7 @@ Load images
             print(
                 f"The shape of the image is: {crpd_img_a.shape} or (400, 400)")
             print(crpd_img_a)
-            rotate_img(crpd_img_a)
-            return img_array
+            return crpd_img_a
 
     except Exception as e:
         print((f"Error: {e}"))
-
-
-if __name__ == '__main__':
-    ft_load('animal.jpeg')
