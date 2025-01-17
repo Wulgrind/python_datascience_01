@@ -1,6 +1,6 @@
-import numpy as np
 import matplotlib.pyplot as plt
 from load_image import ft_load
+
 
 def zoom_img(path: str):
     """
@@ -26,6 +26,7 @@ Zoom on images
     plt.ylabel('Y-axis (pixels)')
     plt.title('Zoomed Image')
     plt.show()
+
 
 if __name__ == '__main__':
     zoom_img('animal.jpeg')
